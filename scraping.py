@@ -4,9 +4,6 @@ import csv
 CENTINELA = None
 
 def cargar_html(archivo, tamano_buffer=1024):
-    """
-    Lee el archivo HTML en trozos usando un solo búfer.
-    """
     with open(archivo, 'r', encoding="utf-8") as f:
         while True:
             buffer = f.read(tamano_buffer)
